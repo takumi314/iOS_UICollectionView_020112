@@ -29,6 +29,7 @@
 }
 
 
+
 - (NSInteger) collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataArray.count;
 }
@@ -38,19 +39,15 @@
 
     Cell *aCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myCell" forIndexPath:indexPath];
     
-    //aCell.myLabel.text = self.dataArray[indexPath.row];
-    
     NSString *images = self.imageArray[indexPath.row];
+    
+    aCell.myImage.image = [UIImage imageNamed:images];
     
     NSLog(@"%@ - %@", self.dataArray[indexPath.row] , images);
     
-//    aCell.myImage.image = [UIImage imageNamed:@"London.jpg"];
     
-    aCell.myImage.image = [UIImage imageNamed:self.imageArray[indexPath.row]];
-    
-     NSLog(@"%@", self.imageArray[indexPath.row]);
-
     return aCell;
+    
 
 }
 
