@@ -42,7 +42,7 @@
     
     NSString *images = self.imageArray[indexPath.row];
     
-    //NSLog(@"%@ - %@", self.dataArray[indexPath.row] , images);
+    NSLog(@"%@ - %@", self.dataArray[indexPath.row] , images);
     
 //    aCell.myImage.image = [UIImage imageNamed:@"London.jpg"];
     
