@@ -20,7 +20,7 @@
     
     // ラベルに表示させるデータを格納
     self.dataArray = @[@"あ",@"い",@"う"];
-    self.imageArray = @[@"London,jpg",@"Paris,jpg",@"Tokyo,jpg"];
+    self.imageArray = @[@"London.jpg",@"Paris.jpg",@"Tokyo.jpg"];
     
 }
 
